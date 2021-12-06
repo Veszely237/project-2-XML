@@ -1,0 +1,45 @@
+{
+    "Forza Horizon 5": {
+        "releaseDate": "2021/11/08",
+        "publisher": "Xbox Game Studios",
+        "review": "9/10",
+        "link": "https://store.steampowered.com/app/1551360/Forza_Horizon_5/",
+        "image": "https://www.windowscentral.com/sites/wpcentral.com/files/styles/large/public/field/image/2021/08/forza-horizon-5-key-art-01.jpg"
+    },
+    "F1 2021": {
+        "releaseDate": "2021/07/15",
+        "publisher": "Electronic Arts",
+        "review": "7/10",
+        "link": "https://store.steampowered.com/app/1134570/F1_2021/",
+        "image": "https://media.contentapi.ea.com/content/dam/ea/f1/f1-2021/news/images/2021/05/news-standardedition-featuredimage-1920.png.adapt.crop191x100.628p.png"
+    },
+    "Need for Speed Hot Pursuit Remastered": {
+        "releaseDate": "2020/11/06",
+        "publisher": "Electronic Arts",
+        "review": "6/10",
+        "link": "https://store.steampowered.com/app/1328660/Need_for_Speed_Hot_Pursuit_Remastered/",
+        "image": "https://media.contentapi.ea.com/content/dam/eacom/need-for-speed-hot-pursuit-remastered/images/2020/09/nfs-youtube-cover-image-16x9-l.jpg.adapt.crop16x9.1023w.jpg"
+    },
+    "The Crew 2": {
+        "releaseDate": "2018/06/28",
+        "publisher": "Ubisoft",
+        "review": "8/10",
+        "link": "https://store.steampowered.com/app/646910/The_Crew_2/",
+        "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/03d9bd58090047.59ef53b7340d9.jpg"
+    },
+    "Need for Speed Heat": {
+        "releaseDate": "2019/11/08",
+        "publisher": "Electronic Arts",
+        "review": "8/10",
+        "link": "https://store.steampowered.com/app/1222680/Need_for_Speed_Heat/",
+        "image": "https://preview.redd.it/lnsq4dwbzng31.jpg?width=2000&format=pjpg&auto=webp&s=2e02690dac3cd171e7fcaf445fd0fbafe243ddeb"
+    },
+
+    "Hot Wheels Unleashed": {
+        "releaseDate": "2021/09/30",
+        "publisher": "Milestone S.r.l",
+        "review": "7/10",
+        "link": "https://store.steampowered.com/app/1271700/HOT_WHEELS_UNLEASHED/",
+        "image": "https://cdn.akamai.steamstatic.com/steam/apps/1271700/capsule_616x353.jpg?t=1634800185"
+    }
+}
