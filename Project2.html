@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Project 2</title>
+    <link rel="stylesheet" href="Project2.css">
+</head>
+
+<body>
+
+    <div class="gameList">
+    </div>
+
+    <div class="bottomCenter">
+        <div class="status"></div>
+        <button type="button" class="btn json" onclick="videoGameInfo()">See Games</button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script class="Info">
+        function videoGameInfo() {
+            $(".gameList").children().remove();
+            $(".status").text("Started!");
+            $.getJSON('gameInfo.json', function(json) {
+                    ProcessInfo(json);
+                }).fail(function() {
+                    $(".status").text("Error!");
+                })
+                .always(function() {
+                    $(".status").text("Completed!");
+                });
+        }
+
+        function ProcessInfo(json) {
+            $(".gameList").append("<h2>Games<h2>");
+            $(".gameList").append("<ul></ul>");
+            $.each(json, function(key) {
+                var column = ("<p>" + '<img src="' + json[key].image + '" alt="' + key + ' " style="width:100px;height:100px;"><br>' +
+                    key +
+                    "<br>released: " + json[key].releaseDate +
+                    "<br>Published by: " + json[key].publisher +
+                    "<br>Review: " + json[key].review +
+                    '<br>Link: <a href="' + json[key].link) + '" target="_blank">' + key + '<br><br></p>';
+                $(".gameList ul").append(column);
+            });
+        }
+    </script>
+</body>
+
+</html>
