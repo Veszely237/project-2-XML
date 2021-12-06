@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Project 2: Find-a-Game by Reese and William</title>
+    <link rel="stylesheet" href="Project2.css">
+</head>
+
+<body>
+    <div class="containter">
+    <div class="center">
+    <h1>Find-a-Game</h1>
+            <div class="gameGenre">
+                <!-- Here we will put a h2 element with the genre selected -->
+            </div>
+            <div class="gameList">
+                <!-- Here will be the list of games of that genre -->
+            </div>
+
+            
+                    <div class="status"></div>
+                    <!-- <button type="button" class="btn json" onclick="videoGameInfo()">See Games</button> -->
+                    <button type="button" class="btn json" onclick="actionVideoGameInfo()">Action Games</button>
+                    <button type="button" class="btn json" onclick="casualVideoGameInfo()">Casual Games</button>
+                    <button type="button" class="btn json" onclick="fightingVideoGameInfo()">Fighting Games</button>
+                    <button type="button" class="btn json" onclick="racingVideoGameInfo()">Racing Games</button>
+                    <button type="button" class="btn json" onclick="RPGVideoGameInfo()">RPG Games</button>
+                    <button type="button" class="btn json" onclick="sportsVideoGameInfo()">Sports Games</button>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script class="Info">
+        // function videoGameInfo() {
+        //     $(".gameList").children().remove();
+        //     $(".status").text("Started!");
+        //     $.getJSON('gameInfo.json', function(json) {
+        //             ProcessInfo(json);
+        //         }).fail(function() {
+        //             $(".status").text("Error!");
+        //         })
+        //         .always(function() {
+        //             $(".status").text("Completed!");
+        //         });
+        // }
+        // Action Games
+        function actionVideoGameInfo() {
+            $(".gameList").children().remove();
+            $(".status").text("Started!");
+            $.getJSON('actionGames.json', function(json) {
+                    ProcessInfo(json, "Action Games");
+                }).fail(function() {
+                    $(".status").text("Error!");
+                })
+                .always(function() {
+                    $(".status").text("Completed!");
+                });
+        }
+        // Casual Games
+        function casualVideoGameInfo() {
+            $(".gameList").children().remove();
+            $(".status").text("Started!");
+            $.getJSON('casualGames.json', function(json) {
+                    ProcessInfo(json, "Casual Games");
+                }).fail(function() {
+                    $(".status").text("Error!");
+                })
+                .always(function() {
+                    $(".status").text("Completed!");
+                });
+        }
+        // Fighting Games
+        function fightingVideoGameInfo() {
+            $(".gameList").children().remove();
+            $(".status").text("Started!");
+            $.getJSON('fightingGames.json', function(json) {
+                    ProcessInfo(json, "Fighting Games");
+                }).fail(function() {
+                    $(".status").text("Error!");
+                })
+                .always(function() {
+                    $(".status").text("Completed!");
+                });
+        }
+        // Racing Games
+        function racingVideoGameInfo() {
+            $(".gameList").children().remove();
+            $(".status").text("Started!");
+            $.getJSON('racingGames.json', function(json) {
+                    ProcessInfo(json, "Racing Games");
+                }).fail(function() {
+                    $(".status").text("Error!");
+                })
+                .always(function() {
+                    $(".status").text("Completed!");
+                });
+        }
+        // RPG Games
+        function RPGVideoGameInfo() {
+            $(".gameList").children().remove();
+            $(".status").text("Started!");
+            $.getJSON('RPGGames.json', function(json) {
+                    ProcessInfo(json, "RPG Games");
+                }).fail(function() {
+                    $(".status").text("Error!");
+                })
+                .always(function() {
+                    $(".status").text("Completed!");
+                });
+        }
+        // Sports Games
+        function sportsVideoGameInfo() {
+            $(".gameList").children().remove();
+            $(".status").text("Started!");
+            $.getJSON('sportsGames.json', function(json) {
+                    ProcessInfo(json, "Sports Games");
+                }).fail(function() {
+                    $(".status").text("Error!");
+                })
+                .always(function() {
+                    $(".status").text("Completed!");
+                });
+        }
+        
+        // Display Specified Game Genre's Information
+        function ProcessInfo(json, genre) {
+            $(".gameGenre").html("<h2>" + genre + "<h2>");
+            $(".gameList").html("<ul></ul>");
+            $.each(json, function(key) {
+                var column = ("<table style='width:100%;' <tr><td>Name:</td><td>" + key + "</td></tr>" +
+                    "<tr><td>Image:</td><td><img src='" + json[key].image + "' alt='" + key + "' style='width:100px;height:100px;'></td></tr>" +
+                    "<tr><td>Release Date:</td><td>" + json[key].releaseDate + "</td></tr>" +
+                    "<tr><td>Published by:</td><td>" + json[key].publisher + "</td></tr>" +
+                    "<tr><td>Review:</td><td>" + json[key].review + "</td></tr>" +
+                    "<tr><td>Link:</td><td><a href='" + json[key].link + "' target='_blank'>" + key + "</table>")
+                // var column = ("<p>" + '<img src="' + json[key].image + '" alt="' + key + ' " style="width:100px;height:100px;"><br>' +
+                //     key +
+                //     "<br>released: " + json[key].releaseDate +
+                //     "<br>Published by: " + json[key].publisher +
+                //     "<br>Review: " + json[key].review +
+                //     '<br>Link: <a href="' + json[key].link) + '" target="_blank">' + key + '<br><br></p>';
+                $(".gameList ul").append(column);
+            });
+        }
+    </script>
+</body>
+
+</html>
