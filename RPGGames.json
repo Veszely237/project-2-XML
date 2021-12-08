@@ -1,0 +1,44 @@
+{
+    "League-Of-Legends": {
+        "releaseDate": "2021/03/04",
+        "publisher": "Riot Games",
+        "review": "1",
+        "link": "https://www.leagueoflegends.com/",
+        "image": "https://cdn1.dotesports.com/wp-content/uploads/2019/09/12195522/league-of-legends.jpg"
+    },
+    "The Elder Scrolls V: Skyrim Special Edition": {
+        "releaseDate": "2016/10/27",
+        "publisher": "Bethesda Softworks",
+        "review": "5",
+        "link": "https://store.steampowered.com/app/489830/The_Elder_Scrolls_V_Skyrim_Special_Edition/",
+        "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/489830/capsule_616x353.jpg?t=1636654357"
+    },
+    "Ruined King: A League of Legends Story": {
+        "releaseDate": "2021/11/16",
+        "publisher": "Riot Forge",
+        "review": "7",
+        "link": "https://store.steampowered.com/app/1276790/Ruined_King_A_League_of_Legends_Story/",
+        "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/1276790/capsule_616x353.jpg?t=1638238898"
+    },
+    "Cyberpunk 2077": {
+        "releaseDate": "2020/12/09",
+        "publisher": "CD PROJEKT RED",
+        "review": "6",
+        "link": "https://store.steampowered.com/app/1091500/Cyberpunk_2077/",
+        "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/header.jpg?t=1621944801"
+    },
+    "Fallout 4": {
+        "releaseDate": "2015/11/10",
+        "publisher": "Bethesda Softworks",
+        "review": "8",
+        "link": "https://store.steampowered.com/app/377160/Fallout_4/",
+        "image": "https://upload.wikimedia.org/wikipedia/en/7/70/Fallout_4_cover_art.jpg"
+    },
+    "Dark Souls 3": {
+        "releaseDate": "2016/04/11",
+        "publisher": "FromSoftware, Inc",
+        "review": "9",
+        "link": "https://store.steampowered.com/app/374320/DARK_SOULS_III/",
+        "image": "https://cdn.akamai.steamstatic.com/steam/apps/374320/capsule_616x353.jpg?t=1637942180"
+    }
+}

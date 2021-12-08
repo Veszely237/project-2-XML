@@ -1,0 +1,44 @@
+{
+    "Halo-Infinite": {
+        "releaseDate": "2021/11/15",
+        "publisher": "Xbox Game Studios",
+        "review": "8",
+        "link": "https://store.steampowered.com/app/1240440/Halo_Infinite/",
+        "image": "https://upload.wikimedia.org/wikipedia/en/1/14/Halo_Infinite.png"
+    },
+    "Call-of-Duty:-Vanguard": {
+        "releaseDate": "2021/09/10",
+        "publisher": "Activision",
+        "review": "6",
+        "link": "https://us.shop.battle.net/en-us/product/call-of-duty-vanguard",
+        "image": "https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/hero/vgd/VGD_SEE_THEM_RISE.jpg"
+    },
+    "Grand-Theft-Auto:-The-Trilogy": {
+        "releaseDate": "2021/11/11",
+        "publisher": "Rockstar Games",
+        "review": "4",
+        "link": "https://www.xbox.com/en-CA/games/store/grand-theft-auto-the-trilogy-the-definitive-edition/9MXMJFNZMVWD",
+        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7f/Grand_Theft_Auto_-_The_Trilogy_-_The_Definitive_Edition.jpg/220px-Grand_Theft_Auto_-_The_Trilogy_-_The_Definitive_Edition.jpg"
+    },
+    "Battlefield-2042": {
+        "releaseDate": "2021/11/19",
+        "publisher": "Electronic Arts",
+        "review": "6",
+        "link": "https://store.steampowered.com/agecheck/app/1517290/",
+        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/Battlefield_2042_cover_art.jpg/220px-Battlefield_2042_cover_art.jpg"
+    },
+    "Tom Clancy's Rainbow Six Siege": {
+        "releaseDate": "2015/12/1",
+        "publisher": "Ubisoft",
+        "review": "6",
+        "link": "https://store.steampowered.com/app/359550/Tom_Clancys_Rainbow_Six_Siege/",
+        "image": "https://upload.wikimedia.org/wikipedia/en/4/47/Tom_Clancy%27s_Rainbow_Six_Siege_cover_art.jpg"
+    },
+    "Counter-Strike: Global Offensive": {
+        "releaseDate": "2021/08/21",
+        "publisher": "Valve",
+        "review": "7",
+        "link": "https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/",
+        "image": "https://www.gamespot.com/a/uploads/scale_medium/mig/7/2/0/5/2227205-i2cs9uzmq4yua.jpg"
+    }
+}

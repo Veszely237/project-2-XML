@@ -1,0 +1,44 @@
+{
+    "The Sims 4": {
+        "releaseDate": "2014/09/02",
+        "publisher": "Electronic Arts",
+        "review": "7",
+        "link": "https://store.steampowered.com/app/1222670/The_Sims_4/",
+        "image": "https://originassets.akamaized.net/origin-com-store-final-assets-prod/55482/231.0x326.0/1011164_LB_231x326_en_WW_%5E_2019-06-26-09-34-45_7105a6cedde2619568d0d477bcf460506034f67d.jpg"
+    },
+    "Stardew Valley": {
+        "releaseDate": "2016/02/26",
+        "publisher": "ConcernedApe",
+        "review": "8",
+        "link": "https://store.steampowered.com/app/413150/Stardew_Valley/",
+        "image": "https://howlongtobeat.com/games/34716_Stardew_Valley.jpg"
+    },
+    "Fall Guys: Ultimate Knockout": {
+        "releaseDate": "2020/08/04",
+        "publisher": "Mediatonic",
+        "review": "6",
+        "link": "https://store.steampowered.com/app/1097150/Fall_Guys_Ultimate_Knockout/",
+        "image": "https://www.mobygames.com/images/covers/l/676458-fall-guys-ultimate-knockout-windows-front-cover.png"
+    },
+    "Overcooked! 2": {
+        "releaseDate": "2018/08/07",
+        "publisher": "Team17",
+        "review": "7",
+        "link": "https://store.steampowered.com/app/728880/Overcooked_2/",
+        "image": "https://www.mobygames.com/images/covers/l/487451-overcooked-2-windows-apps-front-cover.jpg"
+    },
+    "Tabletop Simulator": {
+        "releaseDate": "2015/06/05",
+        "publisher": "Berserk Games",
+        "review": "9",
+        "link": "https://store.steampowered.com/app/286160/Tabletop_Simulator/",
+        "image": "https://www.mobygames.com/images/promo/l/633460-tabletop-simulator-other.jpg"
+    },
+    "Animal-Crossing-New-Horizons": {
+        "releaseDate": "2021/03/04",
+        "publisher": "Nintendo",
+        "review": "8",
+        "link": "https://www.animal-crossing.com/new-horizons/",
+        "image": "https://m.media-amazon.com/images/I/81qKst2CMOL._SL1500_.jpg"
+    }
+}
