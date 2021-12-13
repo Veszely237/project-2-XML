@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Project 2: Find-a-Game by Reese and William</title>
+    <link rel="stylesheet" href="Project2.css">
+</head>
+
+<body>
+    <div class="containter">
+        <h1 style="text-align: center;" class="FindGame">Find-a-Game</h1>
+        <div style="text-align: center;">
+            <button type="button" class="btn json" onclick="actionVideoGameInfo()">Action Games</button>
+            <button type="button" class="btn json" onclick="casualVideoGameInfo()">Casual Games</button>
+            <button type="button" class="btn json" onclick="fightingVideoGameInfo()">Fighting Games</button>
+            <button type="button" class="btn json" onclick="racingVideoGameInfo()">Racing Games</button>
+            <button type="button" class="btn json" onclick="RPGVideoGameInfo()">RPG Games</button>
+            <button type="button" class="btn json" onclick="sportsVideoGameInfo()">Sports Games</button>
+        </div>
+        <div class="status">
+            <!-- Here we will put the status of the jQuery calls -->
+        </div>
+        <div class="gameGenre">
+            <!-- Here we will put a h2 element with the genre selected -->
+        </div>
+        <div class="gameList">
+            <!-- Here will be the list of games of that genre -->
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script class="Info">
+        // Action Games using jQuery call
+        function actionVideoGameInfo() {
+            $(".gameList").children().remove();
+            $(".status").text("Started!");
+            $.getJSON('actionGames.json', function(json) {
+                    ProcessInfo(json, "Action Games");
+                }).fail(function() {
+                    $(".status").text("Error!");
+                })
+                .always(function() {
+                    $(".status").text("Completed!");
+                });
+        }
+        // Casual Games using jQuery call
+        function casualVideoGameInfo() {
+            $(".gameList").children().remove();
+            $(".status").text("Started!");
+            $.getJSON('casualGames.json', function(json) {
+                    ProcessInfo(json, "Casual Games");
+                }).fail(function() {
+                    $(".status").text("Error!");
+                })
+                .always(function() {
+                    $(".status").text("Completed!");
+                });
+        }
+        // Fighting Games using jQuery call
+        function fightingVideoGameInfo() {
+            $(".gameList").children().remove();
+            $(".status").text("Started!");
+            $.getJSON('fightingGames.json', function(json) {
+                    ProcessInfo(json, "Fighting Games");
+                }).fail(function() {
+                    $(".status").text("Error!");
+                })
+                .always(function() {
+                    $(".status").text("Completed!");
+                });
+        }
+        // Racing Games using AJAX call
+        function racingVideoGameInfo() {
+            $(".gameList").children().remove();
+            $(".status").text("Started!");
+            $.getJSON('racingGames.json', function(json) {
+                    ProcessInfo(json, "Racing Games");
+                }).fail(function() {
+                    $(".status").text("Error!");
+                })
+                .always(function() {
+                    $(".status").text("Completed!");
+                });
+        }
+
+        // RPG Games using AJAX call
+        function RPGVideoGameInfo() {
+            $(".gameList").children().remove();
+            $(".status").text("Started!");
+            $.getJSON('RPGGames.json', function(json) {
+                    ProcessInfo(json, "RPG Games");
+                }).fail(function() {
+                    $(".status").text("Error!");
+                })
+                .always(function() {
+                    $(".status").text("Completed!");
+                });
+        }
+        // Sports Games using AJAX call
+        function sportsVideoGameInfo() {
+            $(".gameList").children().remove();
+            $(".status").text("Started!");
+            $.getJSON('sportsGames.json', function(json) {
+                    ProcessInfo(json, "Sports Games");
+                }).fail(function() {
+                    $(".status").text("Error!");
+                })
+                .always(function() {
+                    $(".status").text("Completed!");
+                });
+        }
+
+        // Display Specified Game Genre's Information
+        function ProcessInfo(json, genre) {
+            $(".gameGenre").html("<h2 style='text-align: center'>" + genre + "<h2>");
+            $(".gameList").html("<ul class=gameUl></ul>");
+            // Loops through each game and adds 1 point to the review score.
+            $.each(json, function(key) {
+                var column = ("<table class='gameTable' <tr><td class='leftCol'>Name:</td><td><strong>" + key + "</strong></td></tr>" +
+                    "<tr><td>Image:</td><td><img src='" + json[key].image + "' alt='" + key + "' style='width:100px;height:100px;'></td></tr>" +
+                    "<tr><td>Release Date:</td><td><strong>" + json[key].releaseDate + "</strong></td></tr>" +
+                    "<tr><td>Published by:</td><td><strong>" + json[key].publisher + "</strong></td></tr>" +
+                    "<tr><td>Review:</td><td><strong>" + (parseInt(json[key].review) + 1) + "/10</strong></td></tr>" +
+                    "<tr><td>Link:</td><td><a href='" + json[key].link + "' target='_blank'>" + key + "</table><br>")
+                $(".gameList ul").append(column);
+            });
+        }
+
+        function randomGenre(minVal, maxVal) {
+            return Math.floor(Math.random() * (maxVal - minVal + 1) + minVal)
+        }
+
+        // When user hovers over class btn
+        $(".btn").hover(
+            function() {
+                // start the animate class
+                $(this).toggleClass('animate');
+            }
+        );
+
+        // When user clicks the page header
+        $(".FindGame").click(
+            function() {
+                var randomVal = randomGenre(0, 5);
+                switch (randomVal) {
+                    case 0:
+                        actionVideoGameInfo();
+                        break;
+                    case 1:
+                        casualVideoGameInfo();
+                        break;
+                    case 2:
+                        fightingVideoGameInfo();
+                        break;
+                    case 3:
+                        racingVideoGameInfo();
+                        break;
+                    case 4:
+                        RPGVideoGameInfo();
+                        break;
+                    case 5:
+                        sportsVideoGameInfo();
+                        break;
+                }
+
+            }
+        );
+    </script>
+</body>
+
+</html>
